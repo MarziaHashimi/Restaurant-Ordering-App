@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat. Smile. Repeat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet"/>
+   
+  </head>
+  <body>
+    <div class="main">
+      <header>
+        <div class="header-txt">
+          <span class="header-title">Eat. Smile. Repeat</span>
+          <p class="motto">The Best Pizza and Burger in the Town</p>
+        </div>
+      </header>
+      <main>
+        <div class="menu-items" id="menu-items"></div>
+
+        <section class="checkout" id="checkout">
+          <p class="checkout-header">Your Order</p>
+          <div class="checkout-items" id="checkout-items"></div>
+          <div class="checkout-total">
+            <div class="checkout-item-summary">
+              <p>Total Price</p>
+              <p id="order-total">$0</p>
+            </div>
+          </div>
+          <button id="order-btn" class="placeOrderBtn">Complete Order</button>
+        </section>
+
+        <section id="payment-modal" class="modal">
+          <div class="modal-title">
+              Enter card Details
+              <span id="close-modal-btn" class="close-btn">x</span>
+          </div>
+      
+          <form>
+              <input class="input-rect" id="name" type="text" required placeholder="Enter Your Name"/>
+              <input class="input-rect" id="cardNumber" type="text" required placeholder="Enter Card Number"/>
+              <input class="input-rect" id="cvvNumber" type="text" required placeholder="Enter CVV"/>
+              <button type="submit" id="pay-btn" class="pay-btn">Pay</button>
+          </form>
+      </section>
+      </main>
+    </div>
+    <footer>
+      <h3> Eat. Smile. Repeat</h3>
+      <p>Copyright &copy; 2024</p>
+  </footer>
+  <script defer src="script.js" type="module"></script>
+  </body>
+</html>

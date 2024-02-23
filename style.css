@@ -1,0 +1,230 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    background-color: rgb(215, 183, 137);
+}
+
+.main {
+    width: 610px;
+    height: auto;
+    margin: auto;
+    background-color: #d3ac7e;
+}
+
+header {
+    background-image: url('images/burger.jpg');
+    background-size: cover;
+    height: 170px;
+    background-repeat: cover, no-repeat;
+    
+}
+
+.header-txt {
+    color: yellow;
+    padding-top: 60px;
+    padding-left:15px;
+  
+}
+
+ .header-title {
+    font-size:32px;
+  
+}
+.motto {
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.dish-item {
+    width: 520px;
+    height: 100px;
+    margin: 40px auto ;
+    border-bottom: 2px solid #c8a12a;
+}
+
+.dish-item-inner {
+    display: flex;
+    gap: 30px;
+}
+
+.dish-item-inner i {
+
+    color: #c9973b;
+    font-size: 45px;
+    margin: auto 0 auto auto;
+}
+
+.dish-item-inner i:hover{
+    cursor: pointer;
+    font-size: 60px;
+    color: #c09331
+}
+.dish-item-inner i:focus {
+    cursor: pointer;
+    font-size: 60px;
+    color: #c09331
+}
+
+.item-inner-content p {
+    padding-bottom: 8px;
+}
+
+.item-icon {
+    width: 50px;
+    height: 45px;
+}
+
+.item-name {
+    font-size: 20px;
+    font-weight: 700;
+    color:rgb(78, 59, 29);
+}
+
+.item-desc {
+    font-size: 16px;
+    color: #4f4d4d;
+}
+
+.item-price {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+.checkout {
+    display: none;
+    width: 508px;
+    height: 300px;
+    margin: 40px auto;
+    font-size: 20px;
+    font-weight: 600;
+    color: #46340e;
+}
+
+.checkout-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.checkout-total {
+    padding: 8px 0;
+    border-top: 2px solid #c8a12a;
+}
+
+.checkout .placeOrderBtn {
+    cursor: pointer;
+    margin: 53px auto;
+    font-size: 18px;
+    font-weight: 500;
+    color: #564632;
+    border: none;
+    border-radius: 5px;
+    width: 500px;
+    height: 60px;
+    background-color: #c1942c;
+}
+
+
+.checkout-item-summary {
+    display: flex;
+    justify-content: space-between;
+}
+.remove {
+    font-size: 16px;
+    color: #a16b1b;
+    cursor: pointer;
+}
+
+.checkout-item-summary-partA {
+    display: flex;
+    gap: 30px;
+}
+
+.modal {
+    display: none;
+    width: 380px;
+    height: 380px;
+    position: absolute;
+    top: 400px;
+    bottom: 0;
+    left: 30px;
+    right: 30px;
+    margin: auto;
+    background-color: #c19f4b;
+    border: 1px solid rgb(78, 68, 40);
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.modal-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 0px;
+    color: #46340e;
+    position: relative;
+}
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 26px;
+    color: #46340e;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #b87b0b;
+}
+.input-rect {
+    width: 350px;
+    height: 50px;
+    padding: 20px 10px;
+    font-size: 16px;
+    background-color: #efce9e;
+    border: 1px, solid #46340e;
+    border-radius: 5px;
+}
+
+.pay-btn {
+    margin-top: 20px;
+    font-weight: 700;
+    width: 350px;
+    height: 60px;
+    font-size: 25px;
+    border: none;
+    color: #46340e;
+    background-color: #af7f0d;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.order-status {
+    text-align: center;
+    background-color: #d19337;
+border-radius: 6px;
+    color: #604417;
+    font-size: 23px;
+    padding: 20px 10px;
+}
+footer{
+    display: block;
+    text-align: center;
+    align-items: center;  
+    margin-top: 50px;
+    color: rgb(175, 132, 32);
+    line-height: 1.8em;
+  }
